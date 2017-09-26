@@ -1,0 +1,45 @@
+<!Doctype html>
+<!-- This is a comment -->
+<!-- A simple Calculator -->
+<!-- Designed by Paul Christian... No rights reserved whatsoever -->
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="design.css"> 
+   </head>
+   <title>Calculator</title>
+   <body>
+      <div id="calculator">
+      <form>
+         <input type="text" id="display" disabled><br>
+         
+         <!-- create calcultor buttons -->
+         <input type="button" id="keys" value="C" onclick="addtodisplay('C')">
+         <input type="button" id="keys" value="<--" onclick="backspace()">
+         <input type="button" id="keys" value="X^2" onclick="raisetopower()">
+         <input type="button" id="keys" value="+" onclick="addtodisplay('+')">
+
+         <input type="button" id="keys" value="9" onclick="addtodisplay('9')">
+	 <input type="button" id="keys" value="8" onclick="addtodisplay('8')">
+	 <input type="button" id="keys" value="7" onclick="addtodisplay('7')">
+	 <input type="button" id="keys" value="-" onclick="addtodisplay('-')">
+
+         <input type="button" id="keys" value="6" onclick="addtodisplay('6')">
+	 <input type="button" id="keys" value="5" onclick="addtodisplay('5')">
+	 <input type="button" id="keys" value="4" onclick="addtodisplay('4')">
+	 <input type="button" id="keys" value="*" onclick="addtodisplay('*')">
+
+	 <input type="button" id="keys" value="3" onclick="addtodisplay('3')">
+	 <input type="button" id="keys" value="2" onclick="addtodisplay('2')">
+	 <input type="button" id="keys" value="1" onclick="addtodisplay('1')">
+	 <input type="button" id="keys" value="/" onclick="addtodisplay('/')">
+
+     <input type="button" id="keys" value="0" onclick="addtodisplay('0')">
+	 <input type="button" id="keys" value="." onclick="addtodisplay('.')">
+	 <input type="button" id="equal" value="=" onclick="calculateresult()">	          
+      </form>
+     </div>
+     <script src="logic.js"></script>    
+	
+   </body>
+
+</html>
